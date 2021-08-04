@@ -1,0 +1,65 @@
+.content
+  position: relative
+  background: #EEEFEF
+
+@media all and ( min-width: 1000px )
+  .woman-img
+    transform: translate(150px,100px)
+    max-height: 500px
+    width: 500px
+
+  .man-img
+    transform: translate(-100px,120px)
+
+@media all and ( max-width: 375px )
+  .woman-img
+    height: 190px
+    transform: translateY(-130px)
+
+  .man-img
+    height: 250px
+    transform: translateY(40px,100px)
+
+@media all and ( max-width: 350px )
+  .woman-img
+    height: 100px
+    transform: translateY(-130px)
+
+  .man-img
+    height: 100px
+    transform: translateY(40px)
+
+
+.woman-img
+  position: absolute
+  display: block
+  width: auto
+  max-height: 250px
+  top: 17rem
+  left: 9rem
+  z-index: -1
+
+.man-img
+  position: absolute
+  display: block
+  width: auto
+  max-height: 300px
+  top: 11rem
+  right: 13rem
+  z-index: -1
+
+.main-content
+  left: 50%
+  transform: translateX(-50%)
+  position: absolute
+  z-index: 20
+  min-height: 100vh
+  display: flex
+  flex-direction: column-reverse
+  align-items: center
+  justify-content: end
+  background: #EEEFEF
+
+
+
+

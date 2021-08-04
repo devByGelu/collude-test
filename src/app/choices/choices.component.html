@@ -1,0 +1,8 @@
+<main>
+  <div
+    *ngFor="let option of options$ | async; let i = index"
+    [attr.data-index]="i"
+  >
+    {{ option.label }}
+  </div>
+</main>
